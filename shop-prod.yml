@@ -1,0 +1,13 @@
+cart-service
+
+CartController
+            endpoint                            설명 
+           
+POST : cart-service/cart/new          : 새로운 카트 생성
+GET : cart-service/cart/list/{id}         : 아이템명에 따라 카트 목록 조회
+DELETE : cart-service/cart/delete/{id} : 아이템명에 따라 카트에서 아이템제거 
+
+ItemFeign
+ 	endpoint                            설명 
+
+PUT : item-service/catalogs/itemname: 상품 주문에 따른 재고 업데이트
